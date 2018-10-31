@@ -13,7 +13,7 @@ import { UsersService } from './users.service';
   ngOnInit() {
     // this.users = this.userService.users;
     this.userService.getUsers().subscribe(users => {
-      console.log(users);
+      this.users = users;
     });
   }
 }

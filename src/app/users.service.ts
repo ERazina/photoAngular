@@ -27,8 +27,8 @@ export class UsersService {
       return users.map(user => {
         return {
           name: user.name.first + ' ' + user.name.last,
-          city: user.location.city,
-          picture: user.picture.medium
+          geo: user.location.city + ', ' + user.location.state + ', ' + user.location.street,
+          picture: user.picture.large
         };
       });
     }));
