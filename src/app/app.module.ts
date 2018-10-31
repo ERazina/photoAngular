@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { UsersService } from './users.service';
+import {HttpModule} from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { UsersService } from './users.service';
     UserComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]

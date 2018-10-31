@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-user',
@@ -8,6 +9,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class UserComponent {
 
   constructor() { }
+
+
 
 
   @Input() user;

@@ -6,11 +6,14 @@ import { UsersService } from './users.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+  export class AppComponent {
   users = [];
   constructor (private userService: UsersService) {}
 
   ngOnInit() {
-    this.users = this.userService.users;
+    // this.users = this.userService.users;
+    this.userService.getUsers().subscribe(users => {
+      console.log(users);
+    });
   }
 }
