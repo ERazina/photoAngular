@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { UsersService } from './users.service';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +6,5 @@ import { UsersService } from './users.service';
   styleUrls: ['./app.component.scss']
 })
   export class AppComponent {
-  users = [];
-  searchString = '';
-  constructor (private userService: UsersService) {}
 
-  ngOnInit() {
-    // this.users = this.userService.users;
-    this.userService.getUsers().subscribe(users => {
-      this.users = users;
-    });
-  }
 }
