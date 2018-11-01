@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { UsersService } from './users.service';
 import {HttpModule} from '@angular/http';
+import { HoverDirective } from './hover.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent
+    UserComponent,
+    HoverDirective
   ],
   imports: [
     BrowserModule,
