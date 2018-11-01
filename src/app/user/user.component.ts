@@ -10,9 +10,12 @@ export class UserComponent {
 
   constructor() { }
 
-
-
-
   @Input() user;
+
+  isMarked = false;
+
+  onClick() {
+    this.isMarked = true;
+  }
 
 }
